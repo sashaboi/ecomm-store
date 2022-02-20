@@ -136,9 +136,7 @@ h2{
 }
 
 .products{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    padding-top: 20px;
+    display: flex;
 }
 .filters-title{
     display: flex;
@@ -227,7 +225,9 @@ h2{
 .top-panel{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
+    padding: 20px;
 }
 li { cursor: pointer; }
 
@@ -328,3 +328,53 @@ li { cursor: pointer; }
     padding-top: 20px;
 }
 
+.heart-badge{
+    background-color: rgba(0,0,0,0) !important;
+    padding-left: 40px;
+    padding-top: 18px;
+    color: red;
+    font-size: 18px;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-section{
+    display: flex;
+    align-items: flex-start;
+    
+    flex-direction: row;
+    gap: 50px;
+}
+
+.card-calculations{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price-actual,.discount-actual,.delivery,.total-amount{
+    display: flex;
+    justify-content: space-between;
+}
+
+.separator{
+    border:#818181 1px solid;
+}
+
+.action-button{
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.action-button:hover{
+    cursor: pointer;
+}
